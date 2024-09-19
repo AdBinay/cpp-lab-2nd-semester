@@ -41,8 +41,32 @@ The CRUD application includes several functionalities, each accessible through s
 ## File Structure
 
 - `crud.cpp`: Contains the logic for handling CRUD operations. It reads from and writes to a `records.txt` file which stores the data.
-- `index.html`: The main HTML file where the user can add, update, and delete records. It also includes a button to view all records.
+- `form.html`: The main HTML file where the user can add, update, and delete records. It also includes a button to view all records.
 - `styles.css`: (Optional) Contains CSS styles for the HTML pages to improve aesthetics.
+
+## Usage
+**Start Your Web Server Ensure your Apache server is running. If using XAMPP, start it from the XAMPP control panel.
+**
+**Access the Application Open a web browser and go to the URL:**
+
+http://localhost/cgi-bin/crud.cgi
+Replace localhost with your server's IP address if accessing remotely.
+
+## Interact with the Application
+
+- `Add a Record`: Enter the name, address, and phone number in the provided fields and click "Add Record".
+- `View All Records`: Click "View All" to see all existing records.
+- `Update a Record`: Enter the existing name and new address/phone number, then click "Update Record".
+- `Delete a Record`: Enter the name of the record to delete and click "Delete Record".
+  
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+- Fork the Project
+- Create your Feature Branch (git checkout -b feature/AmazingFeature)
+- Commit your Changes (git commit -m 'Add some AmazingFeature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
 
 ## Troubleshooting
 
