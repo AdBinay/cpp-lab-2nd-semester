@@ -1,4 +1,4 @@
-# CRUD Application Documentation
+# CRUD Application Documentation(c++ Labwork)
 
 Welcome to the README documentation for the CRUD (Create, Read, Update, Delete) application. This application is designed to manage records through a simple web interface using HTML forms and a CGI script backend written in C++. Below you'll find setup instructions, usage details, and a brief overview of the system architecture.
 
