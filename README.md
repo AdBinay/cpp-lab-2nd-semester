@@ -79,6 +79,6 @@ Contributions are what make the open-source community such an amazing place to l
 
 - This application is designed for educational purposes and might require additional security measures for production use, such as input validation and handling of concurrent data access.
 
-Thank you for choosing to use the CRUD application. Should you encounter any issues or have questions, please consult this documentation or reach out for support.
+Thank you for choosing to use the CRUD application. Should you encounter any issues or have questions, please consult this documentation or reach out for support in binayadh77@gmail.com
 ![image](https://github.com/user-attachments/assets/d61cca09-c358-4da1-9519-54fc68064003)
 
