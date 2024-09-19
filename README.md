@@ -45,12 +45,14 @@ The CRUD application includes several functionalities, each accessible through s
 - `styles.css`: (Optional) Contains CSS styles for the HTML pages to improve aesthetics.
 
 ## Usage
-**Start Your Web Server Ensure your Apache server is running. If using XAMPP, start it from the XAMPP control panel.
-**
+- Start Your Web Server
+- Ensure your Apache server is running.
+- If using XAMPP, start it from the XAMPP control panel.
+
 **Access the Application Open a web browser and go to the URL:**
 
-http://localhost/cgi-bin/crud.cgi
-Replace localhost with your server's IP address if accessing remotely.
+- http://localhost/cgi-bin/crud.cgi
+- Replace localhost with your server's IP address if accessing remotely.
 
 ## Interact with the Application
 
