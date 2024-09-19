@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-section h2 {
+            font-size: 20px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CRUD Application</h1>
+
+    <div class="container">
+
+        <div class="form-section">
+            <h2>Add a Record</h2>
+            <form action="/cgi-bin/crud.cgi" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <input type="hidden" name="action" value="Add">
+                <input type="submit" value="Add Record">
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Update a Record</h2>
+            <form action="/cgi-bin/crud.cgi" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="newAddress">New Address:</label>
+                <input type="text" id="newAddress" name="address" required>
+                
+                <label for="newPhone">New Phone:</label>
+                <input type="text" id="newPhone" name="phone" required>
+
+                <input type="hidden" name="action" value="Update">
+                <input type="submit" value="Update Record">
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Delete a Record</h2>
+            <form action="/cgi-bin/crud.cgi" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="deleteName" name="name" required>
+
+                <input type="hidden" name="action" value="Delete">
+                <input type="submit" value="Delete Record">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
